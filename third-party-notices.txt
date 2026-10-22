@@ -1,0 +1,240 @@
+Santra: third-party software
+============================
+
+Santra includes the open-source components listed below. Each one keeps its own licence. The full licence
+texts are in the "licenses" folder next to Santra.exe, in one subfolder per component.
+
+Some components are under the GNU Lesser General Public License (Magick.NET and ImageMagick, TagLib#, FFmpeg).
+Santra uses them as separate files that you may replace with your own builds, and you may reverse engineer
+Santra as far as needed to debug such changes. Where to get their exact source code is listed with each one
+below, and at https://komil-parmar.github.io/Santra/open-source.html
+
+------------------------------------------------------------------------------
+Magick.NET and ImageMagick 15.0.0
+  Licence:   Apache-2.0 (Magick.NET); ImageMagick License; bundled libraries under BSD, MIT, zlib, IJG, FreeType, MPL-1.1 (cairo) and LGPL (libheif, libde265, glib, pango, librsvg, fribidi, gdk-pixbuf, liblqr, libcroco, libraw) licences
+  Copyright: Copyright 2013-2026 Dirk Lemstra; ImageMagick Studio LLC; see the notice for each library
+  Website:   https://github.com/dlemstra/Magick.NET
+  Source:    Magick.Native-Q8-x64.dll is a separate library you can replace. Source code: https://github.com/dlemstra/Magick.NET/tree/15.0.0 (Magick.NET) and https://github.com/dlemstra/Magick.Native/tree/2026.1010.1943 (the native library, with the exact version of every library built into it).
+  Note:      Magick.Native-Q8-x64.dll has 38 libraries built in; Notice.txt lists each one with its licence.
+  Texts:     licenses\Magick.NET\Apache-2.0.txt, licenses\Magick.NET\LICENSE.txt, licenses\Magick.NET\Notice.txt
+
+------------------------------------------------------------------------------
+TagLib# 2.3.0
+  Licence:   LGPL-2.1-only
+  Copyright: Copyright (c) 2006-2007 Brian Nickel; Copyright (c) 2009-2020 other contributors
+  Website:   https://github.com/mono/taglib-sharp
+  Source:    TagLibSharp.dll is the unmodified library, used as a separate file you can replace with your own build. Source code: https://github.com/mono/taglib-sharp/tree/TaglibSharp-2.3.0.0
+  Texts:     licenses\TagLibSharp\LICENSE.txt
+
+------------------------------------------------------------------------------
+FFmpeg 8.1.3
+  Licence:   LGPL-3.0-or-later (this build includes no GPL or non-free parts)
+  Copyright: Copyright the FFmpeg developers; see the licence of each library
+  Website:   https://ffmpeg.org
+  Source:    Santra runs FFmpeg as a separate program and does not modify it; its DLLs can be replaced. Source code: FFmpeg https://github.com/FFmpeg/FFmpeg/tree/29e619e767cde9045a75c29bc9a8278ae7b3a98b (n8.1.3-9-g29e619e767) and the build scripts with the exact version of every library https://github.com/BtbN/FFmpeg-Builds/tree/autobuild-2026-09-30-13-08
+  Note:      The LGPL build by BtbN (autobuild-2026-09-30-13-08), shipped as tools\ffmpeg.exe, tools\ffprobe.exe and their DLLs.
+  Texts:     licenses\FFmpeg\GPL-3.0.txt, licenses\FFmpeg\LICENSE.txt
+
+------------------------------------------------------------------------------
+AngleSharp 1.5.2
+  Licence:   MIT
+  Copyright: Copyright 2013-2026, AngleSharp
+  Website:   https://github.com/AngleSharp/AngleSharp
+  Texts:     licenses\AngleSharp\LICENSE.txt
+
+------------------------------------------------------------------------------
+ClosedXML 0.105.1
+  Licence:   MIT
+  Copyright: Copyright ClosedXML contributors
+  Website:   https://github.com/ClosedXML/ClosedXML
+  Texts:     licenses\ClosedXML\LICENSE.txt
+
+------------------------------------------------------------------------------
+ClosedXML.Parser 2.0.0
+  Licence:   MIT
+  Copyright: Copyright ClosedXML.Parser contributors
+  Website:   https://github.com/ClosedXML/ClosedXML.Parser
+  Texts:     licenses\ClosedXML.Parser\LICENSE.txt
+
+------------------------------------------------------------------------------
+Open XML SDK 3.5.1
+  Licence:   MIT
+  Copyright: Copyright Microsoft Corporation
+  Website:   https://github.com/dotnet/Open-XML-SDK
+  Texts:     licenses\OpenXmlSdk\LICENSE.txt, licenses\OpenXmlSdk\NOTICE.txt
+
+------------------------------------------------------------------------------
+ExcelDataReader 3.9.0
+  Licence:   MIT
+  Copyright: Copyright ExcelDataReader contributors
+  Website:   https://github.com/ExcelDataReader/ExcelDataReader
+  Texts:     licenses\ExcelDataReader\LICENSE.txt
+
+------------------------------------------------------------------------------
+ExcelNumberFormat 1.1.0
+  Licence:   MIT
+  Copyright: Copyright andersnm and contributors
+  Website:   https://github.com/andersnm/ExcelNumberFormat
+  Texts:     licenses\ExcelNumberFormat\LICENSE.txt
+
+------------------------------------------------------------------------------
+Html Agility Pack 1.13.1
+  Licence:   MIT
+  Copyright: Copyright ZZZ Projects Inc.
+  Website:   https://github.com/zzzprojects/html-agility-pack
+  Texts:     licenses\HtmlAgilityPack\LICENSE.txt
+
+------------------------------------------------------------------------------
+HtmlToOpenXml 3.5.0
+  Licence:   MIT
+  Copyright: Copyright 2009-2026 Olivier Nizet
+  Website:   https://github.com/onizet/html2openxml
+  Texts:     licenses\HtmlToOpenXml\LICENSE
+
+------------------------------------------------------------------------------
+Markdig 1.4.1
+  Licence:   BSD-2-Clause
+  Copyright: Copyright Alexandre Mutel
+  Website:   https://github.com/xoofx/markdig
+  Texts:     licenses\Markdig\LICENSE.txt
+
+------------------------------------------------------------------------------
+MetadataExtractor 2.9.3
+  Licence:   Apache-2.0
+  Copyright: Copyright Drew Noakes 2002-2026
+  Website:   https://github.com/drewnoakes/metadata-extractor-dotnet
+  Texts:     licenses\MetadataExtractor\Apache-2.0.txt, licenses\MetadataExtractor\LICENSE.txt
+
+------------------------------------------------------------------------------
+Microsoft.Extensions abstractions 8.0.2
+  Licence:   MIT
+  Copyright: Copyright .NET Foundation and Contributors
+  Website:   https://github.com/dotnet/runtime
+  Texts:     licenses\Microsoft.Extensions\LICENSE.TXT, licenses\Microsoft.Extensions\THIRD-PARTY-NOTICES.TXT
+
+------------------------------------------------------------------------------
+Microsoft Edge WebView2 SDK 1.0.4258.31
+  Licence:   Microsoft WebView2 SDK licence (BSD-style)
+  Copyright: Copyright Microsoft Corporation
+  Website:   https://aka.ms/webview
+  Texts:     licenses\WebView2\LICENSE.txt, licenses\WebView2\NOTICE.txt
+
+------------------------------------------------------------------------------
+PDFsharp 6.2.4
+  Licence:   MIT
+  Copyright: Copyright empira Software GmbH
+  Website:   https://github.com/empira/PDFsharp
+  Texts:     licenses\PDFsharp\LICENSE.txt
+
+------------------------------------------------------------------------------
+PDFtoImage 5.4.0
+  Licence:   MIT
+  Copyright: Copyright David Sungaila
+  Website:   https://github.com/sungaila/PDFtoImage
+  Texts:     licenses\PDFtoImage\LICENSE.txt
+
+------------------------------------------------------------------------------
+PDFium 152.0.7961
+  Licence:   BSD-3-Clause (PDFium); bundled libraries under Apache-2.0, BSD, MIT, zlib, IJG, FreeType and ICU licences
+  Copyright: Copyright The PDFium Authors; Benoit Blanchon (build); see the licence of each library
+  Website:   https://github.com/bblanchon/pdfium-binaries
+  Note:      The pdfium-binaries build chromium/7961; its folder has the licence of each library built into pdfium.dll.
+  Texts:     licenses\PDFium\abseil.txt, licenses\PDFium\agg23.txt, licenses\PDFium\Apache-2.0.txt, licenses\PDFium\fast_float.txt, licenses\PDFium\freetype.txt, licenses\PDFium\icu.txt, licenses\PDFium\lcms.txt, licenses\PDFium\libjpeg_turbo.ijg, licenses\PDFium\libjpeg_turbo.md, licenses\PDFium\libopenjpeg.txt, licenses\PDFium\libpng.txt, licenses\PDFium\libtiff.txt, licenses\PDFium\llvm-libc.txt, licenses\PDFium\pdfium-binaries.LICENSE.txt, licenses\PDFium\pdfium.txt, licenses\PDFium\simdutf.txt, licenses\PDFium\zlib.txt
+
+------------------------------------------------------------------------------
+PdfPig 0.1.16
+  Licence:   Apache-2.0
+  Copyright: Copyright PdfPig contributors
+  Website:   https://github.com/UglyToad/PdfPig
+  Texts:     licenses\PdfPig\Apache-2.0.txt, licenses\PdfPig\LICENSE.txt
+
+------------------------------------------------------------------------------
+RBush 4.0.0
+  Licence:   MIT
+  Copyright: Copyright 2017-2024 Turning Code, LLC (and other contributors)
+  Website:   https://github.com/viceroypenguin/RBush
+  Texts:     licenses\RBush\LICENSE.txt
+
+------------------------------------------------------------------------------
+ReverseMarkdown 6.2.1
+  Licence:   MIT
+  Copyright: Copyright Babu Annamalai
+  Website:   https://github.com/mysticmind/reversemarkdown-net
+  Texts:     licenses\ReverseMarkdown\LICENSE.txt
+
+------------------------------------------------------------------------------
+RtfPipe 2.0.7677.4303
+  Licence:   MIT
+  Copyright: Copyright Eric Domke
+  Website:   https://github.com/erdomke/RtfPipe
+  Texts:     licenses\RtfPipe\LICENSE.txt
+
+------------------------------------------------------------------------------
+SharpCompress 0.50.6
+  Licence:   MIT
+  Copyright: Copyright Adam Hathcock
+  Website:   https://github.com/adamhathcock/sharpcompress
+  Texts:     licenses\SharpCompress\LICENSE.txt
+
+------------------------------------------------------------------------------
+SixLabors.Fonts 1.0.0
+  Licence:   Apache-2.0
+  Copyright: Copyright Six Labors
+  Website:   https://github.com/SixLabors/Fonts
+  Texts:     licenses\SixLabors.Fonts\Apache-2.0.txt, licenses\SixLabors.Fonts\LICENSE.txt
+
+------------------------------------------------------------------------------
+SkiaSharp and Skia 4.150.1
+  Licence:   MIT (SkiaSharp); BSD-3-Clause (Skia); see the third-party notices
+  Copyright: Copyright Microsoft Corporation; Google LLC
+  Website:   https://github.com/mono/SkiaSharp
+  Texts:     licenses\SkiaSharp\LICENSE.txt, licenses\SkiaSharp\THIRD-PARTY-NOTICES.txt
+
+------------------------------------------------------------------------------
+Velopack 1.2.161
+  Licence:   MIT
+  Copyright: Copyright Velopack Ltd.
+  Website:   https://github.com/velopack/velopack
+  Texts:     licenses\Velopack\LICENSE.txt
+
+------------------------------------------------------------------------------
+XmpCore 6.1.10.1
+  Licence:   BSD-3-Clause (Adobe XMP SDK licence)
+  Copyright: Copyright 2015-2021 Drew Noakes; Copyright Adobe
+  Website:   https://github.com/drewnoakes/xmp-core-dotnet
+  Note:      XmpCore has no licence file of its own; its README says Adobe's XMP SDK BSD licence applies. The text comes from Adobe's XMP-Toolkit-SDK repository.
+  Texts:     licenses\XmpCore\LICENSE.txt
+
+------------------------------------------------------------------------------
+ZXing.Net 0.16.11
+  Licence:   Apache-2.0
+  Copyright: Copyright Michael Jahn and ZXing authors
+  Website:   https://github.com/micjahn/ZXing.Net
+  Texts:     licenses\ZXing.Net\Apache-2.0.txt, licenses\ZXing.Net\LICENSE.txt
+
+------------------------------------------------------------------------------
+.NET 10 runtime 10.0.13
+  Licence:   MIT
+  Copyright: Copyright .NET Foundation and Contributors
+  Website:   https://github.com/dotnet/runtime
+  Texts:     licenses\DotNetRuntime\LICENSE.TXT, licenses\DotNetRuntime\THIRD-PARTY-NOTICES.TXT
+
+------------------------------------------------------------------------------
+Windows Presentation Foundation and Windows Forms (.NET 10) 10.0.13
+  Licence:   MIT
+  Copyright: Copyright .NET Foundation and Contributors
+  Website:   https://github.com/dotnet/wpf
+  Texts:     licenses\WindowsDesktop\LICENSE
+
+------------------------------------------------------------------------------
+Windows SDK projection for .NET 10.0.19041.57
+  Licence:   Microsoft Software License Terms for the Windows SDK (redistributable); WinRT.Runtime: MIT
+  Copyright: Copyright Microsoft Corporation
+  Website:   https://aka.ms/WinSDKLicenseURL
+  Note:      Microsoft.Windows.SDK.NET.dll is Microsoft's redistributable Windows SDK projection (terms: https://aka.ms/WinSDKLicenseURL). The included text is the MIT licence of C#/WinRT, which provides WinRT.Runtime.dll.
+  Texts:     licenses\WindowsSdkProjection\LICENSE.txt
+
+------------------------------------------------------------------------------
+Windows features Santra uses without extra components: Windows.Media.Ocr (text recognition),
+Windows.Media.FaceAnalysis (face detection), the Media Foundation H.264 and AAC encoders, and the share sheet.
+
