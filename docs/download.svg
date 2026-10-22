@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 68" width="340" height="68" role="img" aria-label="Download for Windows">
+  <defs>
+    <linearGradient id="flesh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC56B"/>
+      <stop offset="0.55" stop-color="#FF9A2E"/>
+      <stop offset="1" stop-color="#F07A16"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#8A3C08" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect x="6" y="4" width="328" height="54" rx="27" fill="#C9620F" filter="url(#shadow)"/>
+  <rect x="6" y="2" width="328" height="52" rx="26" fill="url(#flesh)"/>
+  <rect x="7.5" y="3.5" width="325" height="49" rx="24.5" fill="none" stroke="#FFE3B0" stroke-opacity="0.6"/>
+  <g fill="none" stroke="#471D04" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 17 v18"/>
+    <path d="M42 28 l8 8 l8 -8"/>
+    <path d="M40 41 h20"/>
+  </g>
+  <text x="184" y="35" text-anchor="middle" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="700" fill="#471D04">Download for Windows</text>
+</svg>
